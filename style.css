@@ -1,0 +1,57 @@
+/* Copied style.css to proj/ so GH-pages has it relative to the index page */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap');
+
+body {
+    font-family: 'Inter', Arial, sans-serif;
+    background: radial-gradient(1200px 400px at 10% 10%, #0f1724 0%, #091230 30%, #05102b 60%), #0b1220;
+    color: #e6eef8;
+    margin: 0;
+    padding: 24px;
+}
+
+h1 { margin: 0; font-size: 28px; display: inline-block }
+
+.container {
+    max-width: 980px;
+    margin: 28px auto;
+    background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.03));
+    padding: 24px;
+    border-radius: 14px;
+    box-shadow: 0 6px 30px rgba(2,6,23,0.6), 0 1px 0 rgba(255,255,255,0.02) inset;
+    border: 1px solid rgba(255,255,255,0.04);
+}
+
+input, select, button {
+    padding: 12px;
+    margin: 6px;
+    border-radius: 8px;
+    border: 1px solid rgba(255,255,255,0.08);
+    background: rgba(255,255,255,0.03);
+    color: #e6eef8;
+    outline: none;
+}
+
+button { background: linear-gradient(90deg, #36d1dc, #5b86e5); color: #081225; border: none; cursor: pointer; font-weight: 700; border-radius: 10px; box-shadow: 0 6px 20px rgba(91,134,229,0.16); }
+
+button.ghost, .ghost { background: rgba(255,255,255,0.04); color: #e6eef8; border: 1px solid rgba(255,255,255,0.06); }
+
+.list-item { background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.03)); padding: 14px; border-radius: 10px; margin-top: 10px; display: flex; justify-content: space-between; border-left: 4px solid rgba(91,134,229,0.65); align-items: center; }
+
+.hero { max-width: 980px; margin: 10px auto 0; display: flex; justify-content: space-between; align-items: center; gap: 12px }
+.hero-left { display:flex; align-items:center; gap:12px }
+.profile-photo { width:64px; height:64px; border-radius:12px; box-shadow: 0 8px 30px rgba(9,11,30,0.6); border:1px solid rgba(255,255,255,0.06) }
+.hero-text .subtitle { margin:4px 0 0; color: rgba(230,238,248,0.75); font-size:13px }
+.hero-right { display:flex; gap:8px }
+
+.input-row { display:flex; align-items:center; gap:8px; flex-wrap:wrap }
+.grid-3 { display:grid; grid-template-columns: 1fr 1fr 1fr; gap:8px }
+
+.avatar { width:40px; height:40px; border-radius:10px; display:inline-flex; align-items:center; justify-content:center; color:#fff; font-weight:700; margin-right:10px; flex-shrink:0; }
+.person-entry { display:flex; align-items:center }
+
+table { background: transparent; }
+th { background: rgba(0,0,0,0.2); }
+
+#summaryArea .list-item { border-left: 5px solid rgba(255,189,89,0.9) }
+
+hr { border: none; border-top: 1px dashed rgba(255,255,255,0.04); margin: 24px 0 }

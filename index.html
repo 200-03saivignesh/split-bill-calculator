@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Split Bill Calculator</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="hero">
+    <div class="hero-left">
+        <img id="profilePhoto" class="profile-photo" src="images/profile.svg" alt="Profile">
+        <div class="hero-text">
+            <h1>💸 Split Bill Calculator</h1>
+                <p class="subtitle">A sleek, high-tech split bill calculator you can add to your resume</p>
+        </div>
+    </div>
+    <div class="hero-right">
+        <input id="profileUpload" type="file" accept="image/*" style="display:none" />
+        <button id="changePhoto" class="ghost">Change Photo</button>
+        <button id="downloadResume" class="ghost">Download</button>
+    </div>
+</header>
+
+<div class="container">
+
+    <h3>Add Participant</h3>
+    <div class="input-row">
+        <input type="text" id="personName" placeholder="Enter name">
+        <input type="file" id="personPhoto" accept="image/*">
+        <button id="addPersonBtn" type="button">Add</button>
+    </div>
+
+    <div id="peopleList"></div>
+
+    <hr>
+
+    <h3>Add Expense</h3>
+    <div class="grid-3 input-row">
+        <input type="text" id="expenseDesc" placeholder="Expense Description">
+        <input type="number" id="expenseAmt" placeholder="Amount">
+        <select id="expensePayer"></select>
+    </div>
+    <div class="input-row">
+        <button id="addExpenseBtn" type="button">Add Expense</button>
+    </div>
+
+    <div id="expenseList"></div>
+
+    <hr>
+
+    <!-- Summary Section -->
+    <h3>Summary</h3>
+
+    <div class="list-item"><strong>Total Expense:</strong> ₹<span id="totalExpense">0.00</span></div>
+    <div class="list-item"><strong>Total Balance (Sum of Balances):</strong> ₹<span id="totalBalance">0.00</span></div>
+    <div class="list-item"><strong>Remaining Balance (Should be 0):</strong> ₹<span id="remainingBalance">0.00</span></div>
+    <div class="list-item"><strong>Total Participants:</strong> <span id="totalPeople">0</span></div>
+    <div class="list-item"><strong>Total Expenses Added:</strong> <span id="totalExpensesCount">0</span></div>
+    <div class="list-item"><strong>Average Expense Per Person:</strong> ₹<span id="avgExpense">0.00</span></div>
+    <div class="list-item"><strong>Highest Spender:</strong> <span id="highestSpender">–</span></div>
+    <div class="list-item"><strong>Lowest Spender:</strong> <span id="lowestSpender">–</span></div>
+
+    <br>
+    <div id="summaryArea"></div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
