@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jakka Sai Vignesh | Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+      background: #f4f6f8;
+      color: #222;
+      line-height: 1.6;
+    }
+    
+    header {
+      background: linear-gradient(135deg, #0f172a 0%, #1e3a5f 100%);
+      color: #fff;
+      padding: 50px 20px;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    
+    header img {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      border: 4px solid #38bdf8;
+      margin-bottom: 15px;
+      object-fit: cover;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    }
+    
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+    
+    header p {
+      margin: 8px 0;
+      font-size: 1.1rem;
+      opacity: 0.95;
+    }
+    
+    .header-links {
+      margin-top: 15px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+    
+    header a {
+      color: #38bdf8;
+      text-decoration: none;
+      padding: 8px 16px;
+      border: 1px solid rgba(56, 189, 248, 0.3);
+      border-radius: 6px;
+      transition: all 0.3s ease;
+      display: inline-block;
+    }
+    
+    header a:hover {
+      background: rgba(56, 189, 248, 0.1);
+      border-color: #38bdf8;
+    }
+    
+    section {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    
+    h2 {
+      border-bottom: 3px solid #0f172a;
+      padding-bottom: 12px;
+      color: #0f172a;
+      font-size: 2rem;
+      margin-bottom: 30px;
+    }
+    
+    h3 {
+      color: #0f172a;
+      margin-top: 0;
+      font-size: 1.3rem;
+    }
+    
+    .card {
+      background: #fff;
+      padding: 25px;
+      margin: 20px 0;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      border-left: 4px solid #38bdf8;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+    }
+    
+    .card ul {
+      padding-left: 20px;
+      margin: 15px 0;
+    }
+    
+    .card li {
+      margin: 8px 0;
+      color: #444;
+    }
+    
+    .card em {
+      color: #666;
+      font-size: 0.95rem;
+    }
+    
+    .card a {
+      color: #38bdf8;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+    
+    .card a:hover {
+      color: #0f172a;
+      text-decoration: underline;
+    }
+    
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    
+    .skills span {
+      display: inline-block;
+      background: #e0f2fe;
+      color: #0369a1;
+      padding: 8px 16px;
+      margin: 4px;
+      border-radius: 20px;
+      font-size: 0.95rem;
+      font-weight: 500;
+      transition: all 0.3s ease;
+    }
+    
+    .skills span:hover {
+      background: #38bdf8;
+      color: #fff;
+      transform: translateY(-2px);
+    }
+    
+    footer {
+      background: #0f172a;
+      color: #cbd5f5;
+      text-align: center;
+      padding: 30px 20px;
+      margin-top: 60px;
+      font-size: 0.95rem;
+    }
+    
+    footer a {
+      color: #38bdf8;
+      text-decoration: none;
+    }
+    
+    footer a:hover {
+      text-decoration: underline;
+    }
+    
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      
+      h2 {
+        font-size: 1.5rem;
+      }
+      
+      .header-links {
+        flex-direction: column;
+        gap: 10px;
+      }
+      
+      header a {
+        width: 100%;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="https://via.placeholder.com/160?text=JS" alt="Jakka Sai Vignesh" />
+  <h1>Jakka Sai Vignesh</h1>
+  <p>B.Tech Graduate in Artificial Intelligence & Data Science (2025)</p>
+  <p>📍 Hyderabad, India | 📧 saivigneshsatya@gmail.com</p>
+  <div class="header-links">
+    <a href="https://www.linkedin.com/in/jakka-saivignesh-48a44a253" target="_blank">🔗 LinkedIn</a>
+    <a href="https://github.com/200-03saivignesh" target="_blank">⭐ GitHub</a>
+    <a href="mailto:saivigneshsatya@gmail.com">✉️ Email</a>
+  </div>
+</header>
+
+<section>
+  <h2>About Me</h2>
+  <div class="card">
+    <p>
+      I am a motivated B.Tech graduate in Artificial Intelligence & Data Science, graduating in 2025.
+      I have strong skills in Python, web development, and machine learning, with hands-on experience
+      through internships and academic projects. I am seeking an entry-level software role where I can
+      apply problem-solving skills and contribute to impactful real-world solutions.
+    </p>
+  </div>
+</section>
+
+<section>
+  <h2>Experience</h2>
+
+  <div class="card">
+    <h3>Software Intern – Oasis Infobyte</h3>
+    <p><em>Jun 2023 – Jul 2023 | Hyderabad</em></p>
+    <ul>
+      <li>Developed 10+ Python scripts for data processing and automation</li>
+      <li>Built responsive web pages using HTML, CSS, and JavaScript</li>
+      <li>Improved code reliability through debugging and unit testing</li>
+      <li>Collaborated with a 3-member team in real-world development workflows</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3>Python Intern – InternPe</h3>
+    <p><em>Jan 2023 – May 2023 | Hyderabad</em></p>
+    <ul>
+      <li>Completed 5+ Python mini-projects focused on logic building</li>
+      <li>Performed basic data analysis and transformations</li>
+      <li>Strengthened core Python and clean coding practices</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h2>Projects</h2>
+
+  <div class="card">
+    <h3>💸 Split Bill Calculator</h3>
+    <ul>
+      <li>Web-based expense splitting application inspired by Splitwise</li>
+      <li>Automated expense settlement and improved calculation accuracy</li>
+      <li>Built using HTML, CSS, and JavaScript with responsive design</li>
+      <li>Real-time calculations and participant balance tracking</li>
+    </ul>
+    <p>
+      <strong>GitHub:</strong> <a href="https://github.com/200-03saivignesh/split-bill-calculator1" target="_blank">View Repository</a>
+    </p>
+  </div>
+
+  <div class="card">
+    <h3>🛡️ Safety Air Bag Belt System</h3>
+    <ul>
+      <li>Academic project focused on fall detection and airbag deployment</li>
+      <li>Integrated sensor logic with software control flow</li>
+      <li>Improved system reliability through comprehensive testing</li>
+      <li>Demonstrates understanding of embedded systems and safety protocols</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h2>Technical Skills</h2>
+  <div class="card skills">
+    <span>Python</span>
+    <span>Java</span>
+    <span>C</span>
+    <span>HTML5</span>
+    <span>CSS3</span>
+    <span>JavaScript</span>
+    <span>SQL</span>
+    <span>Git</span>
+    <span>GitHub</span>
+    <span>TensorFlow</span>
+    <span>Machine Learning</span>
+    <span>Data Analysis</span>
+    <span>Pandas</span>
+    <span>NumPy</span>
+    <span>Azure</span>
+    <span>AWS</span>
+    <span>Unit Testing</span>
+    <span>Data Structures</span>
+    <span>Algorithms</span>
+    <span>Problem Solving</span>
+  </div>
+</section>
+
+<section>
+  <h2>Education</h2>
+  <div class="card">
+    <h3>B.Tech – Artificial Intelligence & Data Science</h3>
+    <p><strong>KL University</strong> | 2021 - 2025</p>
+    <p style="color: #666; margin-top: 10px;">
+      Focused on machine learning, data science, artificial intelligence, and full-stack web development.
+    </p>
+  </div>
+  <div class="card">
+    <h3>Intermediate</h3>
+    <p><strong>Narayana Junior College</strong></p>
+  </div>
+  <div class="card">
+    <h3>SSC</h3>
+    <p><strong>Sri Chaitanya Techno School</strong></p>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Jakka Sai Vignesh | Portfolio</p>
+  <p>
+    <a href="https://github.com/200-03saivignesh" target="_blank">GitHub</a> • 
+    <a href="https://www.linkedin.com/in/jakka-saivignesh-48a44a253" target="_blank">LinkedIn</a> • 
+    <a href="mailto:saivigneshsatya@gmail.com">Email</a>
+  </p>
+</footer>
+
+</body>
+</html>
